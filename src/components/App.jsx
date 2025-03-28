@@ -16,7 +16,7 @@ class App extends Component {
 
   searchMovie = (search, type) => {
     this.setState({ status: 'animation' });
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}&type=${type}`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}&type=${type}`)
       .then((value) => value.json())
       .then((value) =>
         value.Response === 'True'
