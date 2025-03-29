@@ -2,10 +2,6 @@ import '../styles/App.css';
 import { Component } from 'react';
 
 class Movie extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { Title, Year, Poster, Type } = this.props.movie;
     return (

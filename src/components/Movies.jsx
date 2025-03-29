@@ -3,9 +3,6 @@ import { Component } from 'react';
 import Movie from './Movie';
 
 class Movies extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { movies } = this.props;
     return (

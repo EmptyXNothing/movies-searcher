@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import Movies from './Movies';
-// import Preloader from './Preloader';
 import Search from './Search';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -28,14 +27,14 @@ class App extends Component {
 
   render() {
     const components = {
-      start: <h1>Ищите фильмы</h1>,
+      start: <h1>Find movies</h1>,
       animation: (
         <div className="anime">
           <span className="loader"></span>
         </div>
       ),
       movies: <Movies movies={this.state.movies} />,
-      error: <h2>Произошла ошибка при поиске или фильм не найден</h2>,
+      error: <h2>An error occurred during the search or the movie was not found.</h2>,
     };
 
     return (
